@@ -47,7 +47,7 @@ const handleSubmit = async (e) => {
 
   try {
     const response = await axios.post(
-      "https://corsproxy.io/?https://cleanuri.com/api/v1/shorten",
+      "https://cleanuri.com/api/v1/shorten",
       new URLSearchParams({ url }),
     );
 

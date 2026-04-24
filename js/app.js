@@ -46,7 +46,10 @@ const handleSubmit = async (e) => {
   }
 
   try {
-    const response = await axios.post("/shorten", new URLSearchParams({ url }));
+    const response = await axios.post(
+      "/api/shorten",
+      new URLSearchParams({ url }),
+    );
 
     if (!response || !response.data) {
       throw new Error("No response from API");

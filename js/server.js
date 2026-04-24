@@ -8,7 +8,7 @@ app.use(express.json());
 app.post("/shorten", async (req, res) => {
   try {
     const response = await axios.post(
-      "https://corsproxy.io/?https://cleanuri.com/api/v1/shorten",
+      "https://cleanuri.com/api/v1/shorten",
       new URLSearchParams({ url: req.body.url }),
     );
 
